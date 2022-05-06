@@ -1,0 +1,122 @@
+.footer{
+    position:fixed;
+    display:flex;
+    justify-content:space-between;
+    bottom:0;
+    height:6;
+    width:97%;
+    background-color:#282828;
+    padding:20px;
+}
+
+.footer_left{
+    flex:0.3;
+    display:flex;
+    align-items:center;
+    color:white;
+    width:300px;
+}
+
+.footer_center{
+    padding:0 100px;
+    flex:0.4;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    max-width:300px;
+}
+
+.footer_right{
+    flex:0.3;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    color:white;
+}
+
+.footer_albumLogo{
+    height:60px;
+    width:60px;
+    margin-right:20px;
+    object-fit:contain;
+}
+
+.footer_green{
+    color:white;
+    transition:350ms color ease-in;
+}
+
+.footer_green:hover{
+    color:#1ed15e;
+}
+
+.footer_songInfo > h4{
+    margin-bottom:5px;
+}
+
+.footer_songInfo{
+    font-size:12px;
+}
+
+
+
+.footer_icon:hover,
+.footer_green:hover{
+    transition:transform 0.2s ease-in-out;
+    transform:scale(1.4) !important;
+}
+
+@keyframes Colorchanging{
+    100%,0%{
+        color: rgb(255,0,0);
+    }
+    8%{
+        color: rgb(255,127,0);
+    }
+    16%{
+        color: rgb(255,255,0);
+    }
+    25%{
+        color: rgb(127,255,0);
+    }
+    33%{
+        color: rgb(0,255,0);
+    }
+    41%{
+        color: rgb(0,255,127);
+    }
+    50%{
+        color: rgb(0,255,255);
+    }
+    58%{
+        color: rgb(0,127,255);
+    }
+    66%{
+        color: rgb(0,0,255);
+    }
+    75%{
+        color: rgb(127,0,255);
+    }
+    83%{
+        color: rgb(255,0,255);
+    }
+    91%{
+        color: rgb(255,0,127);
+    }
+}
+
+.footer_play:hover{
+    
+    transition:transform 0.2s ease-in-out;
+    transform:scale(1.7) !important;
+    animation-name:Colorchanging;
+    animation-duration:2s;
+    animation-iteration-count:infinite;
+    animation-timing-function:ease-in-out;
+}
+
+.footer_right *.MuiSlider-root{
+    color:green;
+}
+

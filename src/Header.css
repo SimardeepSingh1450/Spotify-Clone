@@ -1,0 +1,33 @@
+.header{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.header_left{
+    
+    flex:0.5;
+    min-width:80px;
+    background-color: white;
+    color:gray;
+    left:10px;
+    border-radius: 30px;
+    display:flex;
+    align-items:center;
+}
+
+.header_left > input{
+    border:none;
+    border-radius:100px;
+    width:80%;
+}
+
+.header_right{
+    display:flex;
+    align-items:center;
+}
+
+.search{
+    padding:10px;
+}
+
